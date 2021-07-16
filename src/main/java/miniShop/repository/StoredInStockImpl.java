@@ -8,7 +8,7 @@ import java.util.Map;
 final class StoredInStockImpl implements Store {
     private static final Map<String, Product> stockList = new HashMap<>();
 
-    static {
+    StoredInStockImpl(){
         stockList.put("A", new Product("A", 1.25d, 3.0d, 0.0d, 3.0d));
         stockList.put("B", new Product("B", 4.25d, 0.0d, 0.0d, 0.0d));
         stockList.put("C", new Product("C", 1.00d, 5.0d, 0.0d, 6.0d));
